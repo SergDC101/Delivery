@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.delivery2.MainScreenController">
+   <children>
+      <ImageView fitHeight="117.0" fitWidth="1600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/head.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchField" layoutX="374.0" layoutY="20.0" onKeyReleased="#search" prefHeight="60.0" prefWidth="853.0" promptText="Поиск по сайту" style="-fx-background-radius: 30; -fx-border-radius: 30; -fx-border-color: #9CDCE5; -fx-border-width: 2;" stylesheets="@../../../styles/main.css">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="1520.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/profile.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="nameLabel1" contentDisplay="TOP" layoutX="1322.0" layoutY="25.0" prefHeight="50.0" prefWidth="181.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="TOP_CENTER" layoutX="371.0" layoutY="100.0" prefHeight="771.0" prefWidth="859.0">
+         <children>
+            <ScrollPane fx:id="scrollPro" prefHeight="761.0" prefWidth="847.0" styleClass="transparent" stylesheets="@../../../styles/main.css">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <content>
+                  <GridPane fx:id="gridPro" prefHeight="0.0" prefWidth="0.0">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="14.0" layoutY="100.0" prefHeight="771.0" prefWidth="337.0">
+         <children>
+            <ScrollPane fx:id="scrollCat" prefHeight="761.0" prefWidth="847.0" styleClass="transparent" stylesheets="@../../../styles/main.css">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <content>
+                  <GridPane fx:id="gridCat" prefHeight="0.0" prefWidth="0.0">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <Button fx:id="btmPricrePlus" layoutX="1279.0" layoutY="536.0" mnemonicParsing="false" onAction="#pricePlus" prefHeight="50.0" prefWidth="298.0" style="-fx-background-color: #71D1DE; -fx-background-radius: 20;" text="Цена по возрастанию" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnPriceMinus" layoutX="1279.0" layoutY="592.0" mnemonicParsing="false" onAction="#priceMinus" prefHeight="50.0" prefWidth="298.0" style="-fx-background-color: #71D1DE; -fx-background-radius: 20;" text="Цена по убыванию" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAZ" layoutX="1279.0" layoutY="648.0" mnemonicParsing="false" onAction="#AZ" prefHeight="50.0" prefWidth="298.0" style="-fx-background-color: #71D1DE; -fx-background-radius: 20;" text="От А до Я" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnZA" layoutX="1279.0" layoutY="707.0" mnemonicParsing="false" onAction="#ZA" prefHeight="50.0" prefWidth="298.0" style="-fx-background-color: #71D1DE; -fx-background-radius: 20;" text="От Я до А" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnWeightPlus" layoutX="1279.0" layoutY="765.0" mnemonicParsing="false" onAction="#weightPlus" prefHeight="50.0" prefWidth="298.0" style="-fx-background-color: #71D1DE; -fx-background-radius: 20;" text="Вес по возрастанию" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnWeightMinus" layoutX="1279.0" layoutY="821.0" mnemonicParsing="false" onAction="#weightMinus" prefHeight="50.0" prefWidth="298.0" style="-fx-background-color: #71D1DE; -fx-background-radius: 20;" text="Вес по убыванию" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#d9d9d9" height="404.0" layoutX="1279.0" layoutY="114.0" stroke="TRANSPARENT" strokeType="INSIDE" width="298.0" />
+      <Label layoutX="1389.0" layoutY="123.0" text="Корзина">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="1308.0" layoutY="468.0" text="Сумма:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

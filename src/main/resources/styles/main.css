@@ -1,0 +1,14 @@
+.text-field{
+    -fx-prompt-text-fill: #B5D2D3;
+    -fx-text-fill: #fB5D2D3;
+}
+
+.passwordField{
+    -fx-prompt-text-fill: #B5D2D3;
+    -fx-text-fill: #B5D2D3;
+}
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+

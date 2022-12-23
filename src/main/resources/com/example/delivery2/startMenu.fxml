@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.delivery2.startMenuController">
+   <children>
+      <ImageView fitHeight="625.0" fitWidth="625.0" layoutX="488.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/startMenu.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logBtn" layoutX="698.0" layoutY="726.0" mnemonicParsing="false" onAction="#goTologin" prefHeight="54.0" prefWidth="206.0" style="-fx-background-radius: 40; -fx-background-color: FF9500;" text="Войти" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="regBtn" layoutX="698.0" layoutY="798.0" mnemonicParsing="false" onAction="#goToReg" prefHeight="54.0" prefWidth="206.0" style="-fx-background-radius: 40; -fx-background-color: FF9500;" text="Регистрация" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
